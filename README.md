@@ -8,7 +8,7 @@
 
 ![Victor GitHub stats](https://github-readme-stats.vercel.app/api?username=VictorHNL&show_icons=true&theme=dark)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=VictorHNL&hide_progress=false)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=VictorHNL)](https://github.com/VictorHNL/github-readme-stats)
 
 ### Programming languages ​​I'm learning
 
