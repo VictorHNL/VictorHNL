@@ -22,5 +22,4 @@ Desbravando o universo da programação e transformando linhas de código em sol
 
 ### For contact:
 
-- <img align="center" alt="Whatsapp" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /> - (62) 9 9886-0548
 - <img align="center" alt="email" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /> - victorhnl1409@gmail.com
