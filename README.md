@@ -109,6 +109,6 @@ Futuramente, pretendo aprofundar meus conhecimentos em **TypeScript** e **Node.j
 
 ### 📊 Estatísticas
 
-![VictorHNL GitHub stats](https://github-readme-stats.vercel.app/api?username=VictorHNL&show_icons=true&theme=dark&include_all_commits=true&locale=pt-br)
+![VictorHNL GitHub stats](https://github-readme-stats.vercel.app/api?username=VictorHNL&show_icons=true&theme=dark&include_all_commits=false&locale=pt-br)
 
 [![Tecnologias](https://github-readme-stats.vercel.app/api/top-langs/?username=VictorHNL&locale=pt-br&theme=dark&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
