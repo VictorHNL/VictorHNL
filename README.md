@@ -2,7 +2,7 @@
 
 **`Java Developer | Backend & Full Stack Developer`**
 
-Olá, meu nome é Victor Hugo, tenho 20 anos e sou natural de Goiânia - GO.  
+Olá, meu nome é Victor Hugo, tenho 21 anos e sou natural de Goiânia - GO.  
 Concluí o ensino médio em Portugal e atualmente curso Bacharelado em Sistemas de Informação na ESUP.
 
 Atualmente direciono meus estudos e projetos para desenvolvimento backend com Java, buscando evoluir como Software Engineer através da prática, construção de projetos e aprendizado contínuo.
