@@ -9,7 +9,7 @@
 <details open>
 <summary><code>cat sobre.md</code></summary>
 <br>
-<img src="assets/about.svg" alt="Sobre Victor Hugo: estudante de Sistemas de Informação, desenvolvedor Java em formação, interessado em Spring Boot e sistemas backend" width="800">
+<img src="assets/about.svg" alt="Sobre Victor Hugo: Estudante de Sistemas de Informação e desenvolvedor Java em formação, com foco em Java e Spring Boot. Tenho experiência prática em projetos acadêmicos e pessoais, como sistemas bancário e de restaurante, e conhecimentos de Git, GitHub, Docker e metodologia Scrum." width="800">
 </details>
 
 <details open>
@@ -30,7 +30,7 @@
 <details open>
 <summary><code>htop</code></summary>
 <br>
-<img src="assets/stack.svg" alt="Áreas de foco: Java, Spring Boot, microsserviços, Docker, Git e GitHub, Scrum" width="800">
+<img src="assets/stack.svg" alt="Áreas de foco: Desenvolvedor Java | Spring Boot | APIs RESTful | PostgreSQL | Docker | Git | Microservices" width="800">
 </details>
 
 <details>
