@@ -1,7 +1,7 @@
 import { mkdir, readFile, writeFile, copyFile } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { siDocker, siGit, siGithub, siKubernetes, siSpringboot } from 'simple-icons';
+import { siDocker, siGit, siGithub, siKubernetes, siPostgresql, siSpringboot } from 'simple-icons';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const USER = 'VictorHNL';
@@ -275,6 +275,7 @@ function customIcon(name) {
     linkedin: '<circle cx="5" cy="6" r="1.5" fill="#c084fc" stroke="none"/><path d="M4 10h2v10H4zM9 10h2v1.5c.8-1.2 1.8-1.7 3.2-1.7 2.5 0 3.8 1.6 3.8 4.3V20h-2v-5.4c0-1.8-.7-2.8-2.2-2.8-1.7 0-2.8 1.2-2.8 3.2V20H9z"/>',
     scrum: '<path d="M5 8a8 8 0 0 1 13-2l2 2M19 16a8 8 0 0 1-13 2l-2-2"/><path d="M17 4v4h4M7 20v-4H3"/>',
     microservices: '<path d="M12 12 5 5M12 12l7-7M12 12l-7 7M12 12l7 7"/><circle cx="12" cy="12" r="3"/><circle cx="5" cy="5" r="2"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/>',
+    rest: '<rect x="2.5" y="4" width="7" height="6" rx="1"/><rect x="14.5" y="4" width="7" height="6" rx="1"/><rect x="8.5" y="15" width="7" height="6" rx="1"/><path d="M9.5 7h5M6 10v3.5h6M18 10v3.5h-6"/>',
   };
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${paths[name]}</svg>`;
   const filledSvg = name === 'linkedin'
@@ -336,6 +337,8 @@ async function main() {
     ICON_SPRINGBOOT: iconUri(siSpringboot),
     ICON_DOCKER: iconUri(siDocker),
     ICON_KUBERNETES: iconUri(siKubernetes),
+    ICON_POSTGRESQL: iconUri(siPostgresql),
+    ICON_REST: customIcon('rest'),
     ICON_GIT: iconUri(siGit),
     ICON_SCRUM: customIcon('scrum'),
     ICON_MICROSERVICES: customIcon('microservices'),
