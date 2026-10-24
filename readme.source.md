@@ -1,136 +1,74 @@
-
-
-```aura width=860 height=200 link="https://collectioneur.github.io/readme-aura/"
-<div style={{
-  width: '100%', height: '100%', background: '#08080c',
-  display: 'flex', alignItems: 'center', fontFamily: 'Inter',
-  position: 'relative', overflow: 'hidden', borderRadius: 16,
-  border: '1px solid rgba(110,80,220,0.18)'
-}}>
-
-  <style>{`
-      @keyframes float-slow {
-        0%, 100% { transform: translateX(0px); opacity: 0.8; }
-        50% { transform: translateX(350px); opacity: 1.2; }
-      }
-      @keyframes float-medium {
-        0%, 100% { transform: translateX(0px); opacity: 0.7; }
-        50% { transform: translateX(-250px); opacity: 1.1; }
-      }
-      @keyframes float-fast {
-        0%, 100% { transform: translateX(0px); opacity: 0.9; }
-        50% { transform: translateX(200px); opacity: 0.6; }
-      }
-      @keyframes float-diagonal {
-        0%, 100% { transform: translateX(0px); opacity: 0.75; }
-        50% { transform: translateX(300px); opacity: 1.0; }
-      }
-      @keyframes float-wave {
-        0%, 100% { transform: translateX(0px); opacity: 0.65; }
-        33% { transform: translateX(-160px); opacity: 0.9; }
-        66% { transform: translateX(80px); opacity: 1.0; }
-      }
-      @keyframes float-pulse {
-        0%, 100% { transform: scale(1); opacity: 0.8; }
-        50% { transform: scale(1.3); opacity: 0.4; }
-      }
-      #glow-1 { animation: float-slow 8s ease-in-out infinite; }
-      #glow-2 { animation: float-medium 12s ease-in-out infinite; }
-      #glow-3 { animation: float-fast 9s ease-in-out infinite; }
-      #glow-4 { animation: float-slow 11s ease-in-out infinite reverse; }
-      #glow-5 { animation: float-medium 14s ease-in-out infinite reverse; }
-      #glow-6 { animation: float-diagonal 10s ease-in-out infinite; }
-      #glow-7 { animation: float-wave 13s ease-in-out infinite; }
-      #glow-8 { animation: float-pulse 7s ease-in-out infinite; }
-    `}</style>
-
-  <svg width="860" height="200" style={{ position: 'absolute', top: 0, left: 0 }}>
-    <defs>
-      <radialGradient id="g1" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(110,20,210,0.72)" />
-        <stop offset="40%" stopColor="rgba(90,15,180,0.35)" />
-        <stop offset="70%" stopColor="rgba(90,15,180,0)" />
-      </radialGradient>
-      <radialGradient id="g2" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(40,60,255,0.6)" />
-        <stop offset="45%" stopColor="rgba(30,50,200,0.25)" />
-        <stop offset="70%" stopColor="rgba(30,50,200,0)" />
-      </radialGradient>
-      <radialGradient id="g3" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(0,130,255,0.45)" />
-        <stop offset="50%" stopColor="rgba(0,100,220,0.18)" />
-        <stop offset="70%" stopColor="rgba(0,100,220,0)" />
-      </radialGradient>
-      <radialGradient id="g4" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(0,190,230,0.32)" />
-        <stop offset="70%" stopColor="rgba(0,190,230,0)" />
-      </radialGradient>
-      <radialGradient id="g5" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(90,30,200,0.38)" />
-        <stop offset="70%" stopColor="rgba(90,30,200,0)" />
-      </radialGradient>
-      <radialGradient id="g6" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(160,30,255,0.55)" />
-        <stop offset="45%" stopColor="rgba(130,20,220,0.22)" />
-        <stop offset="70%" stopColor="rgba(130,20,220,0)" />
-      </radialGradient>
-      <radialGradient id="g7" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(20,60,255,0.42)" />
-        <stop offset="50%" stopColor="rgba(10,40,200,0.16)" />
-        <stop offset="70%" stopColor="rgba(10,40,200,0)" />
-      </radialGradient>
-      <radialGradient id="g8" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(0,170,255,0.40)" />
-        <stop offset="50%" stopColor="rgba(0,130,220,0.15)" />
-        <stop offset="70%" stopColor="rgba(0,130,220,0)" />
-      </radialGradient>
-    </defs>
-
-    <ellipse id="glow-1" cx="180" cy="230" rx="260" ry="190" fill="url(#g1)" />
-    <ellipse id="glow-2" cx="300" cy="240" rx="220" ry="160" fill="url(#g2)" />
-    <ellipse id="glow-3" cx="420" cy="240" rx="180" ry="140" fill="url(#g3)" />
-    <ellipse id="glow-4" cx="550" cy="250" rx="150" ry="120" fill="url(#g4)" />
-    <ellipse id="glow-5" cx="750" cy="250" rx="130" ry="110" fill="url(#g5)" />
-    <ellipse id="glow-6" cx="300" cy="240" rx="180" ry="140" fill="url(#g6)" />
-    <ellipse id="glow-7" cx="490" cy="230" rx="220" ry="170" fill="url(#g7)" />
-    <ellipse id="glow-8" cx="590" cy="250" rx="150" ry="130" fill="url(#g8)" />
-  </svg>
-
-  <div style={{
-    position: 'absolute', left: 48, top: 52, width: 96, height: 96,
-    borderRadius: 48, background: 'linear-gradient(135deg, #6622ee, #0088ff)',
-    display: 'flex', alignItems: 'center', justifyContent: 'center',
-  }}>
-    <img src={github?.user?.avatarUrl ?? 'https://github.com/VictorHNL.png'} width={88} height={88} style={{ borderRadius: 44 }} />
-  </div>
-
-  <div style={{ display:'flex', flexDirection:'column', marginLeft:168, gap:8, zIndex: 10 }}>
-    <div style={{ display:'flex', fontSize:38, fontWeight:800, color:'#ffffff', letterSpacing:'-1px', lineHeight:1 }}>
-      {github?.user?.name || github?.user?.login || 'VictorHNL' || 'Name'}
-    </div>
-    <div style={{ display:'flex', fontSize:15, color:'rgba(180,165,255,0.8)', fontWeight:400, letterSpacing:'0.3px' }}>
-      {github?.user?.bio || 'Put here your bio'}
-    </div>
-    <div style={{ display:'flex', gap:8, marginTop:6, flexWrap: 'wrap' }}>
-      {((github && github.languages && github.languages.length > 0)
-        ? github.languages.slice(0, 4).map(function(l) { return l.name; })
-        : ['readme-aura', 'other technologies']
-      ).map(function(tag, i) {
-        return (
-          <div key={tag + '-' + i} style={{
-            display:'flex', padding:'4px 12px', borderRadius:20,
-            background:'rgba(80,40,220,0.18)', border:'1px solid rgba(100,70,240,0.32)',
-            color:'rgba(205,195,255,0.85)', fontSize:12, fontWeight:600,
-          }}>{tag}</div>
-        );
-      })}
-    </div>
-  </div>
-</div>
+```aura width=800 height=260
+(function() {
+  const chars = 'whoami'.split('');
+  return <div style={{ width:'100%', height:'100%', display:'flex', flexDirection:'column', position:'relative', overflow:'hidden', borderRadius:14, border:'1px solid rgba(124,58,237,.55)', background:'#0b0b0f', fontFamily:'JetBrainsMono' }}>
+    <style>{`@keyframes orb-a{0%,100%{transform:translate(0,0);opacity:.34}50%{transform:translate(24px,-14px);opacity:.68}} @keyframes orb-b{0%,100%{transform:translate(0,0);opacity:.28}50%{transform:translate(-18px,12px);opacity:.58}} @keyframes type-in{to{opacity:1}} @keyframes cursor{0%,48%{opacity:1}50%,100%{opacity:0}} #hero-a{animation:orb-a 9s ease-in-out infinite} #hero-b{animation:orb-b 12s ease-in-out infinite} #hero-cursor{animation:cursor 1s steps(2,start) infinite} .typed{opacity:0;animation:type-in .08s steps(1,end) forwards}`}</style>
+    <svg width="800" height="260" style={{position:'absolute',top:0,left:0}}><defs><radialGradient id="hero-g1"><stop offset="0%" stopColor="#7c3aed" stopOpacity=".72"/><stop offset="100%" stopColor="#7c3aed" stopOpacity="0"/></radialGradient><radialGradient id="hero-g2"><stop offset="0%" stopColor="#a855f7" stopOpacity=".6"/><stop offset="100%" stopColor="#a855f7" stopOpacity="0"/></radialGradient><linearGradient id="hero-name" x1="0" x2="1"><stop offset="0%" stopColor="#a855f7"/><stop offset="100%" stopColor="#e9d5ff"/></linearGradient></defs><ellipse id="hero-a" cx="130" cy="232" rx="240" ry="150" fill="url(#hero-g1)"/><ellipse id="hero-b" cx="700" cy="102" rx="190" ry="155" fill="url(#hero-g2)"/></svg>
+    <div style={{height:42,width:'100%',display:'flex',alignItems:'center',justifyContent:'center',position:'relative',background:'#24212b',borderBottom:'1px solid #34303d'}}><div style={{position:'absolute',left:16,display:'flex',gap:8}}><span style={{width:12,height:12,borderRadius:6,background:'#ff5f56'}}/><span style={{width:12,height:12,borderRadius:6,background:'#ffbd2e'}}/><span style={{width:12,height:12,borderRadius:6,background:'#27c93f'}}/></div><span style={{color:'#e5e7eb',fontSize:13}}>VictorHNL — zsh — 80×24</span></div>
+    <div style={{display:'flex',flexDirection:'column',padding:'26px 34px',gap:9,position:'relative'}}><div style={{display:'flex',alignItems:'center',fontSize:15,color:'#e5e7eb'}}><span style={{color:'#c084fc',marginRight:12}}>➜ ~</span>{chars.map(function(c,i){return <span key={i} className="typed" style={{animationDelay:(i*.1)+'s'}}>{c}</span>})}<span id="hero-cursor" style={{color:'#c084fc',marginLeft:2}}>▌</span></div><div style={{display:'flex',fontSize:39,fontWeight:700,letterSpacing:-1,marginTop:3}}><span style={{color:'#7c3aed'}}>Victor </span><span style={{color:'#a855f7'}}>Hugo</span><span style={{color:'#e9d5ff'}}> </span></div><span style={{color:'#e5e7eb',fontSize:15,marginTop:2}}>Transformando curiosidade em soluções Java, uma linha por vez.</span><span style={{color:'#c084fc',fontSize:12,marginTop:5}}>Estudante de Sistemas de Informação · Goiânia, GO</span></div>
+  </div>;
+})()
 ```
 
-```aura width=860 height=22 link="https://collectioneur.github.io/readme-aura/"
-  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%', padding: 0, margin: 0 }}>
-    <span style={{ fontSize: 12, lineHeight: 1, color: 'rgba(150,140,200,0.55)', fontWeight: 500, letterSpacing: '0.4px' }}>powered by readme-aura</span>
-  </div>
+```aura width=150 height=44 link="https://github.com/VictorHNL" inline align=center
+<SocialMediaButton icon={__ICON_GITHUB__} text="GitHub" backgroundColor="#0b0b0f" textColor="#e5e7eb" width={150} height={44} iconSize={20} gradientStops={[{offset:'0%',color:'#7c3aed'},{offset:'35%',color:'#a855f7'},{offset:'70%',color:'#c084fc'},{offset:'100%',color:'#7c3aed'}]} />
+```
+
+```aura width=170 height=44 link="https://www.linkedin.com/in/victor-hugo1409" inline align=center
+<SocialMediaButton icon={__ICON_LINKEDIN__} text="LinkedIn" backgroundColor="#0b0b0f" textColor="#e5e7eb" width={170} height={44} iconSize={20} gradientStops={[{offset:'0%',color:'#7c3aed'},{offset:'35%',color:'#a855f7'},{offset:'70%',color:'#c084fc'},{offset:'100%',color:'#7c3aed'}]} />
+```
+
+```aura width=800 height=60
+<div style={{width:'100%',height:'100%',position:'relative',display:'flex',alignItems:'center',padding:'0 22px',overflow:'hidden',borderRadius:10,background:'#14101f',border:'1px solid rgba(124,58,237,.45)',fontFamily:'JetBrainsMono'}}><style>{`@keyframes scan{0%{transform:translateX(-55%);opacity:.3}50%{opacity:.9}100%{transform:translateX(210%);opacity:.3}} #scan-about{animation:scan 4s ease-in-out infinite}`}</style><span style={{color:'#c084fc',fontSize:14,marginRight:13}}>➜ ~</span><span style={{color:'#e5e7eb',fontSize:14}}>cat sobre.md</span><div id="scan-about" style={{position:'absolute',bottom:0,left:0,height:2,width:'42%',background:'linear-gradient(90deg,transparent,#7c3aed,#c084fc,transparent)'}}/></div>
+```
+
+```aura width=800 height=126
+<div style={{width:'100%',height:'100%',display:'flex',flexDirection:'column',justifyContent:'center',gap:10,padding:'18px 24px',borderRadius:12,border:'1px solid rgba(124,58,237,.45)',background:'#0b0b0f',fontFamily:'JetBrainsMono'}}><span style={{color:'#e5e7eb',fontSize:14}}>Estudante de Sistemas de Informação em Goiânia, GO.</span><span style={{color:'#e5e7eb',fontSize:14}}>Desenvolvo projetos em Java e estudo Spring Boot para desenvolvimento backend.</span><span style={{color:'#9ca3af',fontSize:13}}>Também exploro microsserviços, Docker, Kubernetes, Git, GitHub e Scrum.</span></div>
+```
+
+```aura width=800 height=60
+<div style={{width:'100%',height:'100%',position:'relative',display:'flex',alignItems:'center',padding:'0 22px',overflow:'hidden',borderRadius:10,background:'#14101f',border:'1px solid rgba(124,58,237,.45)',fontFamily:'JetBrainsMono'}}><style>{`@keyframes scan{0%{transform:translateX(-55%);opacity:.3}50%{opacity:.9}100%{transform:translateX(210%);opacity:.3}} #scan-projects{animation:scan 4.4s ease-in-out infinite}`}</style><span style={{color:'#c084fc',fontSize:14,marginRight:13}}>➜ ~</span><span style={{color:'#e5e7eb',fontSize:14}}>ls ~/projetos</span><div id="scan-projects" style={{position:'absolute',bottom:0,left:0,height:2,width:'42%',background:'linear-gradient(90deg,transparent,#7c3aed,#c084fc,transparent)'}}/></div>
+```
+
+```aura width=800 height=110 link="__PROJECT_0_URL__"
+(function(){const p=__PROFILE_DATA__.projects[0];return <div style={{width:'100%',height:'100%',display:'flex',flexDirection:'column',justifyContent:'center',gap:9,padding:'15px 24px',borderRadius:12,border:'1px solid rgba(124,58,237,.48)',background:'#0b0b0f',fontFamily:'JetBrainsMono'}}><span style={{color:'#c084fc',fontSize:12}}>PID 0001 · {p.language||'Linguagem não informada'}</span><span style={{color:'#e5e7eb',fontSize:17,fontWeight:700}}>{p.name}</span><span style={{color:'#9ca3af',fontSize:12}}>{p.description}</span></div>})()
+```
+
+```aura width=800 height=110 link="__PROJECT_1_URL__"
+(function(){const p=__PROFILE_DATA__.projects[1];return <div style={{width:'100%',height:'100%',display:'flex',flexDirection:'column',justifyContent:'center',gap:9,padding:'15px 24px',borderRadius:12,border:'1px solid rgba(124,58,237,.48)',background:'#0b0b0f',fontFamily:'JetBrainsMono'}}><span style={{color:'#c084fc',fontSize:12}}>PID 0002 · {p.language||'Linguagem não informada'}</span><span style={{color:'#e5e7eb',fontSize:17,fontWeight:700}}>{p.name}</span><span style={{color:'#9ca3af',fontSize:12}}>{p.description}</span></div>})()
+```
+
+```aura width=800 height=110 link="__PROJECT_2_URL__"
+(function(){const p=__PROFILE_DATA__.projects[2];return <div style={{width:'100%',height:'100%',display:'flex',flexDirection:'column',justifyContent:'center',gap:9,padding:'15px 24px',borderRadius:12,border:'1px solid rgba(124,58,237,.48)',background:'#0b0b0f',fontFamily:'JetBrainsMono'}}><span style={{color:'#c084fc',fontSize:12}}>PID 0003 · {p.language||'Linguagem não informada'}</span><span style={{color:'#e5e7eb',fontSize:17,fontWeight:700}}>{p.name}</span><span style={{color:'#9ca3af',fontSize:12}}>{p.description}</span></div>})()
+```
+
+```aura width=800 height=60
+<div style={{width:'100%',height:'100%',position:'relative',display:'flex',alignItems:'center',padding:'0 22px',overflow:'hidden',borderRadius:10,background:'#14101f',border:'1px solid rgba(124,58,237,.45)',fontFamily:'JetBrainsMono'}}><style>{`@keyframes scan{0%{transform:translateX(-55%);opacity:.3}50%{opacity:.9}100%{transform:translateX(210%);opacity:.3}} #scan-fetch{animation:scan 4.8s ease-in-out infinite}`}</style><span style={{color:'#c084fc',fontSize:14,marginRight:13}}>➜ ~</span><span style={{color:'#e5e7eb',fontSize:14}}>neofetch</span><div id="scan-fetch" style={{position:'absolute',bottom:0,left:0,height:2,width:'42%',background:'linear-gradient(90deg,transparent,#7c3aed,#c084fc,transparent)'}}/></div>
+```
+
+```aura width=800 height=282
+(function(){const p=__PROFILE_DATA__;const auraMock=github&&github.stats&&github.stats.totalRepos===25&&github.stats.totalStars===128&&github.stats.totalForks===34&&github.stats.totalCommits===1547&&github.user&&github.user.followers===42;const auraOk=!auraMock&&github&&github.stats&&github.user&&github.stats.totalRepos===p.repos&&github.stats.totalStars===p.stars&&github.stats.totalForks===p.forks&&github.user.followers===p.followers;const repos=auraOk?github.stats.totalRepos:p.repos;const stars=auraOk?github.stats.totalStars:p.stars;const forks=auraOk?github.stats.totalForks:p.forks;const followers=auraOk?github.user.followers:p.followers;const langs=p.languages&&p.languages.length?p.languages:(auraOk&&github.languages&&github.languages.length?github.languages:p.primaryLanguages);const langLabel=p.languages&&p.languages.length?'Linguagens · participação no código (bytes)':'Linguagens · percentual de repositórios por linguagem principal';const rows=[{label:'Contribuições · 12 meses',value:p.contributionsYear==null?'indisponível':String(p.contributionsYear)},{label:'Contribuições · total',value:p.contributionsAll==null?'indisponível':String(p.contributionsAll)},{label:'Streak atual / maior',value:p.currentStreak==null||p.longestStreak==null?'indisponível':p.currentStreak+' / '+p.longestStreak+' dias'},{label:'Repositórios públicos',value:String(repos)},{label:'Stars / forks / seguidores',value:stars+' / '+forks+' / '+followers}];return <div style={{width:'100%',height:'100%',display:'flex',flexDirection:'column',padding:'15px 19px',gap:10,borderRadius:12,border:'1px solid rgba(124,58,237,.48)',background:'#0b0b0f',fontFamily:'JetBrainsMono'}}><div style={{display:'flex',flex:1,gap:14}}><div style={{width:215,display:'flex',flexDirection:'column',justifyContent:'center',color:'#a855f7',fontSize:12,lineHeight:1.5}}><span>╭─────────────╮</span><span>│  V I C T O R  │</span><span>│   Java / zsh  │</span><span>╰─────────────╯</span><span style={{color:'#9ca3af',fontSize:10,marginTop:8}}>VictorHNL · GitHub</span></div><div style={{flex:1,display:'flex',flexDirection:'column',justifyContent:'center',gap:7}}>{rows.map(function(row){return <div key={row.label} style={{display:'flex',alignItems:'center',fontSize:11}}><span style={{width:230,color:'#c084fc'}}>{row.label}</span><span style={{color:'#e5e7eb'}}>{row.value}</span></div>})}</div></div><div style={{height:1,width:'100%',background:'#332448'}}/><div style={{display:'flex',flexDirection:'column',gap:6}}><span style={{color:'#c084fc',fontSize:10}}>{langLabel}</span><div style={{display:'flex',gap:12}}>{langs.slice(0,5).map(function(l){return <span key={l.name} style={{color:'#e5e7eb',fontSize:10}}>{l.name} {l.percentage}%</span>})}</div></div>{p.contributionNote?<span style={{color:'#9ca3af',fontSize:9}}>{p.contributionNote}</span>:null}</div>})()
+```
+
+```aura width=800 height=130
+(function(){const p=__PROFILE_DATA__;return <div style={{width:'100%',height:'100%',display:'flex',flexDirection:'column',justifyContent:'center',gap:8,padding:'15px 22px',borderRadius:12,border:'1px solid rgba(124,58,237,.45)',background:'#0b0b0f',fontFamily:'JetBrainsMono'}}><span style={{color:'#c084fc',fontSize:12}}>Atividade recente · commits públicos</span>{p.activity.length?p.activity.slice(0,3).map(function(item){return <div key={item.url} style={{display:'flex',fontSize:10,color:'#e5e7eb'}}><span style={{width:112,color:'#9ca3af'}}>{item.date}</span><span style={{width:170,color:'#c084fc'}}>{item.repo}</span><span style={{flex:1}}>{item.message}</span></div>}):<span style={{color:'#9ca3af',fontSize:11}}>Atividade recente indisponível na API pública.</span>}</div>})()
+```
+
+```aura width=800 height=60
+<div style={{width:'100%',height:'100%',position:'relative',display:'flex',alignItems:'center',padding:'0 22px',overflow:'hidden',borderRadius:10,background:'#14101f',border:'1px solid rgba(124,58,237,.45)',fontFamily:'JetBrainsMono'}}><style>{`@keyframes scan{0%{transform:translateX(-55%);opacity:.3}50%{opacity:.9}100%{transform:translateX(210%);opacity:.3}} #scan-stack{animation:scan 4.1s ease-in-out infinite}`}</style><span style={{color:'#c084fc',fontSize:14,marginRight:13}}>➜ ~</span><span style={{color:'#e5e7eb',fontSize:14}}>htop</span><div id="scan-stack" style={{position:'absolute',bottom:0,left:0,height:2,width:'42%',background:'linear-gradient(90deg,transparent,#7c3aed,#c084fc,transparent)'}}/></div>
+```
+
+```aura width=800 height=196
+(function(){const t=[{name:'Java',icon:__ICON_JAVA__},{name:'Spring Boot',icon:__ICON_SPRINGBOOT__},{name:'Docker',icon:__ICON_DOCKER__},{name:'Kubernetes',icon:__ICON_KUBERNETES__},{name:'Scrum',icon:__ICON_SCRUM__},{name:'Microsserviços',icon:__ICON_MICROSERVICES__},{name:'Git',icon:__ICON_GIT__},{name:'GitHub',icon:__ICON_GITHUB__}];return <div style={{width:'100%',height:'100%',display:'flex',flexWrap:'wrap',alignItems:'center',justifyContent:'center',gap:10,padding:12,borderRadius:12,border:'1px solid rgba(124,58,237,.48)',background:'#0b0b0f',fontFamily:'JetBrainsMono'}}>{t.map(function(x){return <div key={x.name} style={{width:180,height:76,display:'flex',alignItems:'center',gap:13,padding:'0 14px',borderRadius:10,background:'#14101f',border:'1px solid #332448'}}><img src={x.icon} width={30} height={30}/><span style={{color:'#e5e7eb',fontSize:12}}>{x.name}</span></div>})}</div>})()
+```
+
+```aura width=800 height=60
+<div style={{width:'100%',height:'100%',position:'relative',display:'flex',alignItems:'center',padding:'0 22px',overflow:'hidden',borderRadius:10,background:'#14101f',border:'1px solid rgba(124,58,237,.45)',fontFamily:'JetBrainsMono'}}><style>{`@keyframes scan{0%{transform:translateX(-55%);opacity:.3}50%{opacity:.9}100%{transform:translateX(210%);opacity:.3}} #scan-contact{animation:scan 4.6s ease-in-out infinite}`}</style><span style={{color:'#c084fc',fontSize:14,marginRight:13}}>➜ ~</span><span style={{color:'#e5e7eb',fontSize:14}}>contact --all</span><div id="scan-contact" style={{position:'absolute',bottom:0,left:0,height:2,width:'42%',background:'linear-gradient(90deg,transparent,#7c3aed,#c084fc,transparent)'}}/></div>
+```
+
+<p align="center"><a href="https://www.linkedin.com/in/victor-hugo1409">LinkedIn · victor-hugo1409</a> · <a href="https://github.com/VictorHNL">GitHub · VictorHNL</a></p>
+<p align="center"><img src="https://komarev.com/ghpvc/?username=VictorHNL&amp;label=visitas%20ao%20perfil&amp;color=7c3aed" alt="Contador de visitas ao perfil GitHub de VictorHNL" /></p>
+
+```aura width=800 height=60
+<div style={{width:'100%',height:'100%',position:'relative',display:'flex',alignItems:'center',justifyContent:'space-between',padding:'0 22px',overflow:'hidden',borderRadius:10,background:'#0b0b0f',border:'1px solid rgba(124,58,237,.45)',fontFamily:'JetBrainsMono'}}><style>{`@keyframes exit-line{0%{transform:translateX(-50%);opacity:.25}50%{opacity:.85}100%{transform:translateX(215%);opacity:.25}} #exit-line{animation:exit-line 5s ease-in-out infinite}`}</style><div style={{display:'flex',alignItems:'center'}}><span style={{color:'#c084fc',fontSize:13,marginRight:12}}>➜ ~</span><span style={{color:'#e5e7eb',fontSize:13}}>exit</span></div><span style={{color:'#9ca3af',fontSize:11}}>Última atualização: __BUILD_TIME__</span><div id="exit-line" style={{position:'absolute',bottom:0,left:0,height:2,width:'38%',background:'linear-gradient(90deg,transparent,#7c3aed,#c084fc,transparent)'}}/></div>
 ```
