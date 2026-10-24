@@ -1,6 +1,6 @@
 {
   "username": "VictorHNL",
-  "fetchedAt": "2026-10-24T18:47:10.486Z",
+  "fetchedAt": "2026-10-24T18:51:23.965Z",
   "repos": 9,
   "stars": 1,
   "forks": 0,
@@ -12,24 +12,24 @@
   "longestStreak": null,
   "languages": [
     {
+      "name": "Java",
+      "percentage": 44
+    },
+    {
       "name": "TypeScript",
-      "percentage": 34
+      "percentage": 17
     },
     {
       "name": "CSS",
-      "percentage": 29
+      "percentage": 15
     },
     {
       "name": "Python",
-      "percentage": 28
+      "percentage": 14
     },
     {
-      "name": "Java",
+      "name": "JavaScript",
       "percentage": 8
-    },
-    {
-      "name": "Dockerfile",
-      "percentage": 1
     }
   ],
   "primaryLanguages": [
@@ -38,15 +38,11 @@
       "percentage": 56
     },
     {
-      "name": "HTML",
-      "percentage": 11
-    },
-    {
       "name": "JavaScript",
-      "percentage": 11
+      "percentage": 22
     },
     {
-      "name": "Python",
+      "name": "HTML",
       "percentage": 11
     },
     {
@@ -65,7 +61,7 @@
     },
     {
       "name": "SistemaBancario",
-      "description": "Aplicação de terminal em Java para consultar saldo, fazer depósitos e saques e acompanhar o histórico de transações, com validação de entradas.",
+      "description": "Aplicação de linha de comando que simula as operações básicas de uma conta bancária, desenvolvida em Java puro. O projeto tem como objetivo consolidar",
       "language": "Java",
       "url": "https://github.com/VictorHNL/SistemaBancario",
       "stars": 0,
@@ -73,13 +69,32 @@
     },
     {
       "name": "restaurant-system",
-      "description": "Sistema de restaurante baseado em microsserviços: consulta de cardápio, conta de cliente, carrinho, criação de pedidos e acompanhamento de pagamentos.",
+      "description": "Sistema de restaurante baseado em microsserviços. O cliente pode consultar o cardápio, criar uma conta, montar o carrinho, criar pedidos e acompanhar ",
       "language": "TypeScript",
       "url": "https://github.com/VictorHNL/restaurant-system",
       "stars": 0,
       "pushedAt": "2026-10-15T21:21:58Z"
     }
   ],
-  "activity": [],
+  "activity": [
+    {
+      "repo": "calculadora-java",
+      "date": "24/10/26",
+      "message": "Merge pull request #8 from VictorHNL/sprint/5.2-organizar-operacoes",
+      "url": "https://github.com/VictorHNL/calculadora-java/commit/6fbaa56b4f15d8589e583ffc758bdadde353ae41"
+    },
+    {
+      "repo": "SistemaBancario",
+      "date": "17/10/26",
+      "message": "Revise README structure and content",
+      "url": "https://github.com/VictorHNL/SistemaBancario/commit/367184d4a941200797392902f2a70204489d80e9"
+    },
+    {
+      "repo": "restaurant-system",
+      "date": "15/10/26",
+      "message": "docs: explica como visualizar banco PostgreSQL",
+      "url": "https://github.com/VictorHNL/restaurant-system/commit/06b79cc21161ffbc04513711dd632949925d6346"
+    }
+  ],
   "contributionNote": "Contribuições e streaks indisponíveis: configure o secret GH_STATS_TOKEN com escopo read:user nos GitHub Actions Secrets."
 }
