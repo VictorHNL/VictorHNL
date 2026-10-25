@@ -1,7 +1,7 @@
 {
   "username": "VictorHNL",
-  "fetchedAt": "2026-10-25T15:08:01.557Z",
-  "repos": 9,
+  "fetchedAt": "2026-10-25T19:22:55.577Z",
+  "repos": 10,
   "stars": 1,
   "forks": 0,
   "followers": 5,
@@ -35,22 +35,30 @@
   "primaryLanguages": [
     {
       "name": "Java",
-      "percentage": 56
+      "percentage": 60
     },
     {
       "name": "JavaScript",
-      "percentage": 22
+      "percentage": 20
     },
     {
       "name": "HTML",
-      "percentage": 11
+      "percentage": 10
     },
     {
       "name": "TypeScript",
-      "percentage": 11
+      "percentage": 10
     }
   ],
   "projects": [
+    {
+      "name": "Leet-Code-Problems",
+      "description": "Sem descrição no README do projeto.",
+      "language": "Java",
+      "url": "https://github.com/VictorHNL/Leet-Code-Problems",
+      "stars": 0,
+      "pushedAt": "2026-10-25T19:01:58Z"
+    },
     {
       "name": "calculadora-java",
       "description": "Calculadora de terminal desenvolvida em Java como projeto de aprendizado, organizada em incrementos inspirados na metodologia Scrum.",
@@ -66,17 +74,15 @@
       "url": "https://github.com/VictorHNL/SistemaBancario",
       "stars": 0,
       "pushedAt": "2026-10-17T14:21:16Z"
-    },
-    {
-      "name": "restaurant-system",
-      "description": "Sistema de restaurante baseado em microsserviços. O cliente pode consultar o cardápio, criar uma conta, montar o carrinho, criar pedidos e acompanhar ",
-      "language": "TypeScript",
-      "url": "https://github.com/VictorHNL/restaurant-system",
-      "stars": 0,
-      "pushedAt": "2026-10-15T21:21:58Z"
     }
   ],
   "activity": [
+    {
+      "repo": "Leet-Code-Problems",
+      "date": "25/10/26",
+      "message": "Adiciona exercício de par ou ímpar",
+      "url": "https://github.com/VictorHNL/Leet-Code-Problems/commit/f15a9d766c583f9723540aaa578b76bb4e1929b7"
+    },
     {
       "repo": "calculadora-java",
       "date": "24/10/26",
@@ -88,12 +94,6 @@
       "date": "17/10/26",
       "message": "Revise README structure and content",
       "url": "https://github.com/VictorHNL/SistemaBancario/commit/367184d4a941200797392902f2a70204489d80e9"
-    },
-    {
-      "repo": "restaurant-system",
-      "date": "15/10/26",
-      "message": "docs: explica como visualizar banco PostgreSQL",
-      "url": "https://github.com/VictorHNL/restaurant-system/commit/06b79cc21161ffbc04513711dd632949925d6346"
     }
   ],
   "contributionNote": "Contribuições e streaks indisponíveis: configure o secret GH_STATS_TOKEN com escopo read:user nos GitHub Actions Secrets."
