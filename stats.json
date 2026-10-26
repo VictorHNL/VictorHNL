@@ -1,6 +1,6 @@
 {
   "username": "VictorHNL",
-  "fetchedAt": "2026-10-26T17:44:48.207Z",
+  "fetchedAt": "2026-10-26T21:58:35.212Z",
   "repos": 10,
   "stars": 1,
   "forks": 0,
@@ -13,7 +13,7 @@
   "languages": [
     {
       "name": "Java",
-      "percentage": 44
+      "percentage": 45
     },
     {
       "name": "TypeScript",
@@ -57,7 +57,7 @@
       "language": "Java",
       "url": "https://github.com/VictorHNL/Leet-Code-Problems",
       "stars": 0,
-      "pushedAt": "2026-10-25T19:01:58Z"
+      "pushedAt": "2026-10-26T18:22:25Z"
     },
     {
       "name": "calculadora-java",
@@ -79,9 +79,9 @@
   "activity": [
     {
       "repo": "Leet-Code-Problems",
-      "date": "25/10/26",
-      "message": "Adiciona exercício de par ou ímpar",
-      "url": "https://github.com/VictorHNL/Leet-Code-Problems/commit/f15a9d766c583f9723540aaa578b76bb4e1929b7"
+      "date": "26/10/26",
+      "message": "Adiciona exercício de soma da lista",
+      "url": "https://github.com/VictorHNL/Leet-Code-Problems/commit/609ce11403285d1ade582a29ffae10f04dcc7b83"
     },
     {
       "repo": "calculadora-java",
